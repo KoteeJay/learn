@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <div class="menuslider" id="menuslider">
+        <img src="../images/x-symbol-svgrepo-com.svg" alt="" class="x" id="x">
+        <ul>
+            <li><a href="#">SEARCH</a></li>
+            <li><a href="/assets/pages/welcome.html">PROGRAMS</a></li>
+            <li><a href="/assets/pages/langauge.html">LANGUAGE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="../forms/sign in.html">SIGN IN</a></li>
+            <li><a href="../forms/sign up.html">SIGN UP</a></li>
+        </ul>
+    </div>
     <nav>
         <div class="logo">
             <a href="/index.html"> <img src="../images/LEarN.png" alt=""></a>
@@ -26,29 +37,40 @@
                 <li><a href="#" class="active">SIGN UP</a></li>
             </ul>
         </div>
+        <div class="menu" id="menu">
+            <img src="../images/burger-menu-svgrepo-com.svg" alt="">
+        </div>
     </nav>
 
     <!-- ==================
         SIGN UP SECTION
         ===================== -->
     <section>
-        <h2>CREATE ACCOUNT</h2>
+        <div>
+            <h2>CREATE ACCOUNT</h2>
+        </div>
+
         <div class="sign-up">
 
             <div class="left"><img src="../images/signup/unsplash_ip9R11FMbV8.png" alt=""></div>
             <div class="right">
                 <form action="../forms/sign in.html" onsubmit=" return check()">
+
                     <label for="">FIRST NAME</label> <br>
                     <input type="text" id="firstname">
                     <label for="">LAST NAME</label> <br>
                     <input type="text" id="lastname">
+
                     <label for="">EMAIL</label> <br>
                     <input type="text" id="email">
+
                     <label for="">PASSWORD</label> <br>
                     <input type="password" class="password" id="pass">
+
                     <p>*not less than 6 letters and 2 characters</p>
                     <label for="">REPEAT PASSWORD</label> <br>
                     <input type="password" id="repeatpass">
+
                     <div class="terms"><input type="checkbox" class="checkbox" id="checkbox">
                         <p>I agree to terms of service and privacy poiicy</p> <br>
 

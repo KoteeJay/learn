@@ -5,23 +5,28 @@ function check() {
     var pass = document.getElementById('pass')
     var repeatpass = document.getElementById('repeatpass')
     var checkbox = document.getElementById('checkbox')
+    var error = document.getElementById('error')
 
 
 
     if (firstname.value.length <= '4') {
-        console.log('firstname is too short');
+        // error.style.display = "block"
+        alert("Name is too short")
         return false
     } else if (lastname.value.length <= '4') {
-        console.log('lastname is too short');
+        alert("Lastname is too short")
         return false
     } else if (email.value.includes('@') == false) {
-        console.log('Email must include @');
+        alert("Email must include @")
         return false
     } else if (pass.value == '') {
-        console.log('Password cannot be empty');
+        alert("Enter password")
         return false
     } else if (repeatpass.value != pass.value) {
-        console.log("Password missmatch");
+        alert("Password missmatch")
+        return false
+    } else if (checkbox.checked == false) {
+        alert("You must accept our terms")
         return false
     }
 }

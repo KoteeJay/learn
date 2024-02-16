@@ -38,6 +38,7 @@ function validate() {
     var repeatpass = document.getElementById('repeatpass')
     var checkbox = document.getElementById('checkbox')
 
+
     if (name.value == '') {
         console.log('Name cannot be empty');
         return false
