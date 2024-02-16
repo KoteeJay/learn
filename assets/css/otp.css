@@ -1,0 +1,82 @@
+.logo a {
+    border: none;
+    width: 100px;
+}
+
+.logo ul a:hover {
+    background-color: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.active {
+    background-color: #CE72DD;
+    border: none;
+}
+
+.arrow img {
+    width: 30px;
+    position: absolute;
+}
+
+.container .otp {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px rgba(2, 2, 5, 0.2);
+}
+
+.container .otp img {
+    width: 300px;
+}
+
+.container .otp .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.container .otp .box .code {
+    height: 40px;
+    width: 40px;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 5px;
+    margin: 15px auto;
+    box-shadow: 5px 5px 12px rgba(2, 2, 5, 0.2);
+}
+
+form {
+    margin: auto;
+}
+
+.container .otp a {
+    color: #DD9FE8;
+}
+
+.container .otp p {
+    margin: 10px auto 30px;
+}
+
+.container .otp .btn a {
+    padding: 15px 40px;
+    color: #000;
+    background-color: #DD9FE8;
+    border-radius: 20px;
+    margin-top: 50px;
+}

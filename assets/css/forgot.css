@@ -1,0 +1,98 @@
+.logo a {
+    border: none;
+    width: 100px;
+}
+
+.logo ul a:hover {
+    background-color: none;
+}
+
+.back {
+    margin-top: 30px;
+}
+
+.back img {
+    width: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+}
+
+.sign-up {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up .left {
+    width: 30%;
+    margin-left: 55px;
+}
+
+.sign-up .left img {
+    height: 450px;
+}
+
+.active {
+    background-color: #CE72DD;
+    border: none;
+}
+
+.sign-up .right {
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 12px rgba(2, 2, 5, 0.2);
+    text-align: center;
+}
+
+.sign-up .right input {
+    width: 100%;
+    border: solid 1px #000;
+    border-radius: 5px;
+    height: 36px;
+    margin: 20px auto;
+}
+
+.btn {
+    margin: 10px auto 0;
+    width: 40%;
+}
+
+button {
+    background-color: #CE72DD;
+    border-radius: 20px;
+    padding: 10px 40px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 20%;
+    margin: auto;
+}
+
+.images img {
+    width: 20px;
+}

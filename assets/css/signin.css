@@ -1,0 +1,112 @@
+.logo a {
+    border: none;
+    width: 100px;
+}
+
+.logo ul a:hover {
+    background-color: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.sign-up {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up .left {
+    width: 30%;
+    margin-left: 55px;
+}
+
+.sign-up .left img {
+    height: 550px;
+}
+
+.active {
+    background-color: #CE72DD;
+    border: none;
+}
+
+.sign-up .right {
+    width: 40%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 12px rgba(2, 2, 5, 0.2);
+}
+
+.sign-up .right label {
+    font-weight: 500;
+}
+
+.sign-up .right input {
+    width: 100%;
+    border: solid 1px #000;
+    border-radius: 5px;
+    height: 36px;
+    margin-bottom: 20px;
+}
+
+.forgot-pass {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: end
+}
+
+.sign-up .right .forgot-pass a {
+    color: #CE72DD;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 30px auto;
+    width: 40%;
+}
+
+button {
+    background-color: #CE72DD;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px auto;
+    color: #000;
+    width: 200px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 20%;
+    margin: 20px auto;
+}
+
+.images img {
+    width: 20px;
+}
+
+@media only screen and (max-width:880px) {
+    .left {
+        display: none;
+    }
+    .sign-up .left {
+        width: 80%;
+        margin: auto;
+    }
+    .sign-up .right {
+        width: 80%;
+    }
+    h2 {
+        margin: 50px auto 0;
+    }
+}

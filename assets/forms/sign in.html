@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/signin.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html"> <img src="../images/LEarN.png" alt=""></a>
+
+            <div class="rectangle"></div>
+        </div>
+        <div class="buttons">
+            <ul>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="../pages/welcome.html">PROGRAMS</a></li>
+                <li><a href="../pages/langauge.html">LANGUAGE</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#" class="active">SIGN IN</a></li>
+                <li><a href="../forms/sign up.html">SIGN UP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================
+        SIGN IN SECTION
+        ===================== -->
+    <section>
+        <h2>SIGN IN</h2>
+        <div class="sign-up">
+
+            <div class="right">
+                <form action="../pages/welcome.html" onsubmit="return validate()">
+                    <div>
+                        <label for="">FULL NAME</label> <br>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="">PASSWORD</label> <br>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="../forms/forgot.html">Forgot Password</a>
+                        <p>Don't have an account? <a href="../forms/sign up.html">Sign up</a></p>
+                    </div>
+
+
+                    <button class="btn">Submit</button>
+                    <div class="images">
+                        <img src="../images/signup/Vector.png" alt="">
+                        <img src="../images/signup/Vector (1).png" alt="">
+                        <img src="../images/signup/Vector (2).png" alt="">
+                    </div>
+
+                </form>
+            </div>
+            <div class="left"><img src="../images/signup/sign in.png" alt=""></div>
+        </div>
+    </section>
+</body>
+<!-- <script src="../js/form.js"></script> -->
+<script src="../js/script.js"></script>
+
+</html>

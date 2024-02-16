@@ -1,0 +1,35 @@
+.container {
+    text-align: center;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.parent {
+    background-color: #fff;
+    margin: auto;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px rgba(2, 2, 5, 0.2);
+}
+
+.box {
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    padding: 10px 70px;
+}
+
+.box img {
+    width: 30px;
+    margin-right: 30px;
+}
+
+.tittle {
+    margin-top: 7px;
+}
+
+a {
+    color: #000;
+}
