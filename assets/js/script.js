@@ -29,42 +29,29 @@ harmbuger.addEventListener("click", () => {
     }
 });
 
-function validate() {
+var form = document.getElementById('form')
+var modal = document.getElementById('modal')
+
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
     var name = document.getElementById('name')
     var password = document.getElementById('password')
-    var firstname = document.getElementById('firstname')
-    var lastname = document.getElementById('lastname')
-    var email = document.getElementById('email')
-    var repeatpass = document.getElementById('repeatpass')
-    var checkbox = document.getElementById('checkbox')
+    var firstNameError = document.getElementById('firstName-error')
+    var passError = document.getElementById('pass-error')
+
+
 
 
     if (name.value == '') {
-        console.log('Name cannot be empty');
+        firstNameError.innerHTML = "This field is required!"
         return false
     } else if (password.value == '') {
-        console.log('Password cannot be empty');
+        passError.innerHTML = "This field is required!"
         return false
-    } else if (password.value.length <= '6') {
-        console.log('Password is too short');
-        return false
-    } else if (firstname.value.length <= '4') {
-        console.log('firstname is too short');
-        return false
-    } else if (lastname.value.length <= '4') {
-        console.log('lastname is too short');
-        return false
-    } else if (email.value.includes('@') == false) {
-        console.log('Email must include @');
-        return false
-    } else if (repeatpass.validate & password.value == false) {
-        console.log("Password missmatch");
-        return false
+    } else {
+        modal.style.display = "block"
+        form.reset()
     }
-
-
-
-
-
-
-}
+})

@@ -78,7 +78,7 @@ ul {
 
 nav a {
     color: #000000;
-    font-size: .7rem;
+    font-size: .8rem;
     font-weight: 300;
     border: solid 1px #000000;
     border-radius: 5px;
@@ -403,6 +403,10 @@ Professional */
 .program .testimoial .right {
     padding: 60px 90px 0;
     text-align: center;
+}
+
+.program .testimoial .right p {
+    font-size: 20px;
 }
 
 .program .testimoial .right h3 {

@@ -19,7 +19,6 @@ h2 {
 
 .sign-up {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,7 @@ h2 {
     border: solid 1px #000;
     border-radius: 5px;
     height: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .sign-up .right .password {
@@ -111,6 +110,11 @@ button {
     width: 20px;
 }
 
+.error p {
+    color: red;
+    font-size: 15px;
+}
+
 @media only screen and (max-width:880px) {
     .left {
         display: none;
@@ -122,5 +126,82 @@ button {
     .sign-up .right {
         width: 80%;
         margin-top: 30px;
+    }
+}
+
+.modal {
+    background-color: rgb(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    position: fixed;
+    display: none;
+}
+
+.modal .container {
+    background-color: #fff;
+    box-shadow: 5px 5px 12px rgba(2, 2, 5, 0.2);
+    width: 300px;
+    padding: 50px;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.modal .container .sign {
+    width: 70px;
+    height: 70px;
+    background-color: #CE72DD;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -80px;
+}
+
+.modal .container .sign img {
+    width: 50px;
+    margin: auto;
+}
+
+.modal .container .btn a {
+    color: white;
+    padding: 15px 150px;
+    background-color: #CE72DD;
+    height: 50px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width:480px) {
+    .modal .container {
+        width: 300px;
+    }
+    .modal .container .sign {
+        width: 50px;
+        height: 50px;
+    }
+    .modal .container .sign img {
+        width: 35px;
+        margin: auto;
+    }
+    .modal .container h2 {
+        font-size: 18px;
+    }
+    .modal .container .btn {
+        width: 100%;
+    }
+    .modal .container .btn a {
+        color: white;
+        padding: 15px 90px;
+        background-color: #CE72DD;
+        text-align: center;
+        margin: auto;
+    }
+    .sign-up .right {
+        margin-left: 0px;
     }
 }

@@ -50,14 +50,16 @@
         <div class="sign-up">
 
             <div class="right">
-                <form action="../pages/welcome.html" onsubmit="return validate()">
-                    <div>
+                <form action="../pages/welcome.html" id="form" idonsubmit="return validate()">
+                    <div class="error">
                         <label for="">FULL NAME</label> <br>
                         <input type="text" id="name">
+                        <p id="firstName-error"></p>
                     </div>
-                    <div>
+                    <div class="error">
                         <label for="">PASSWORD</label> <br>
                         <input type="password" id="password">
+                        <p id="pass-error"></p>
                     </div>
                     <div class="forgot-pass">
                         <a href="../forms/forgot.html">Forgot Password</a>
@@ -77,6 +79,21 @@
             <div class="left"><img src="../images/signup/sign in.png" alt=""></div>
         </div>
     </section>
+
+    <div class="modal" id="modal">
+        <div class="container">
+            <div class="sign"><img src="../images/burger-menu-svgrepo-com.svg" alt="">
+            </div>
+            <div class="text">
+                <h2>You are now signed in to your No. 1 Online library. Click the button to proceed</h2>
+            </div>
+            <div class="btn" id="btn">
+
+                <a href="/index.html">OK</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 <!-- <script src="../js/form.js"></script> -->
 <script src="../js/script.js"></script>

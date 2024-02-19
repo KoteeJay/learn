@@ -54,31 +54,49 @@
 
             <div class="left"><img src="../images/signup/unsplash_ip9R11FMbV8.png" alt=""></div>
             <div class="right">
-                <form action="../forms/sign in.html" onsubmit=" return check()">
+                <form action="" id="form">
+                    <div class="error">
+                        <label for="name">FIRST NAME</label> <br>
+                        <input type="text" id="firstname">
+                        <p id="firstName-error"></p>
+                    </div>
 
-                    <label for="">FIRST NAME</label> <br>
-                    <input type="text" id="firstname">
-                    <label for="">LAST NAME</label> <br>
-                    <input type="text" id="lastname">
+                    <div class="error">
+                        <label for="">LAST NAME</label> <br>
+                        <input type="text" id="lastname">
+                        <p id="lastName-error"></p>
+                    </div>
 
-                    <label for="">EMAIL</label> <br>
-                    <input type="text" id="email">
+                    <div class="error">
+                        <label for="">EMAIL</label> <br>
+                        <input type="text" id="email">
+                        <p id="emailError"></p>
+                    </div>
 
-                    <label for="">PASSWORD</label> <br>
-                    <input type="password" class="password" id="pass">
+                    <div class="error">
+                        <label for="">PASSWORD</label> <br>
+                        <input type="password" class="password" id="pass">
+                        <p id="passwordError"></p>
+                    </div>
 
-                    <p>*not less than 6 letters and 2 characters</p>
-                    <label for="">REPEAT PASSWORD</label> <br>
-                    <input type="password" id="repeatpass">
+                    <div class="error">
+                        <label for="">REPEAT PASSWORD</label> <br>
+                        <input type="password" id="repeatpass">
+                        <p id="repeatPasswordError"></p>
+                    </div>
 
-                    <div class="terms"><input type="checkbox" class="checkbox" id="checkbox">
-                        <p>I agree to terms of service and privacy poiicy</p> <br>
+                    <div class="terms error"><input type="checkbox" class="checkbox" id="checkbox">
+                        <h4>I agree to terms of service and privacy poiicy</h4> <br>
+                        <div class="error">
+                            <p id="terms"></p>
+                        </div>
+
 
                     </div>
                     <div class="login">
                         <p>Do you have an account? <a href="../forms/sign in.html">Sign In</a></p>
                     </div>
-                    <div class="btn"> <button>SIGN UP</button>
+                    <div class="btn" id="signUpButton"> <button>SIGN UP</button>
                     </div>
                     <div class="images">
                         <img src="../images/signup/Vector.png" alt="">
@@ -90,7 +108,20 @@
             </div>
         </div>
     </section>
+    <div class="modal" id="modal">
+        <div class="container">
+            <div class="sign"><img src="../images/burger-menu-svgrepo-com.svg" alt="">
+            </div>
+            <div class="text">
+                <h2>You are now signed in to your No. 1 Online library</h2>
+            </div>
+            <div class="btn" id="btn">
 
+                <a href="../forms/sign in.html">OK</a>
+            </div>
+        </div>
+
+    </div>
 </body>
 <script src="../js/form.js"></script>
 <script src="../js/script.js"></script>
